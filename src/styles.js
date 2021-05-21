@@ -1,18 +1,38 @@
-import { ThemeProvider, createMuiTheme, responsiveFontSizes , makeStyles, unstable_createMuiStrictModeTheme} from '@material-ui/core/styles'
+import { makeStyles, } from '@material-ui/core/styles';
+import customTheme from './theme';
 
 const useStyle = makeStyles((theme) => ({
+  mainStyle: {
+    backgroundColor: customTheme.palette.primary.main,
+  },
   container: {
-    padding: theme.spacing(0,6,0),
+    // backgroundColor: '#aaaaaa',
+    padding: theme.spacing(10,6,10),
     height: "100vh",
     alignItems: "center",
+    verticalAlign: 'center',
+    width: 'auto',
+    scrollSnapAlign: 'start',
   },
   heroContainer: {
     display: 'flex',
     alignItems: "center",
     height: "80vh",
+    // [theme.breakpoints.only('sm')]: {
+    //   height: "80vh",
+    // },
+    // [theme.breakpoints.only('xs')]: {
+    //   height: "80vh",
+    // },
+    // [theme.breakpoints.only('lg')]: {
+    //   height: "80vh",
+    // },
+    // [theme.breakpoints.only('xl')]: {
+    //   height: "80vh",
+    // },
   },
   heroImage: {
-    backgroundImage: 'url(/img/origami-hero.jpg)',
+    backgroundImage: 'url(/img/origami-hero.png)',
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     backgroundPosition: 'center',
@@ -20,23 +40,41 @@ const useStyle = makeStyles((theme) => ({
     width: "100%",
     [theme.breakpoints.only('sm')]: {
       height: "50%",
+      width: "100%",
     },
     [theme.breakpoints.only('xs')]: {
       height: "50%",
+      width: "100%",
     },
     [theme.breakpoints.only('lg')]: {
       height: "100%",
+      width: "100%",
     },
     [theme.breakpoints.only('xl')]: {
       height: "100%",
+      width: "100%",
     },
   },
   heroContent: {
     
   },
   heroText: {
-    padding: theme.spacing(5,5,5),
+    padding: theme.spacing(0,5,0),
+    textAlign:'left',
+    [theme.breakpoints.down('sm')]: {
+      textAlign:'center',
+      padding: theme.spacing(0,1,0),
+    },
   },
+  responsiveText: {
+    padding: theme.spacing(6,1,6),
+    '@media (min-width:600px)': {
+      padding: theme.spacing(5,4,5),
+    },
+    [theme.breakpoints.up('md')]: {
+      padding: theme.spacing(5,6,5),
+    },
+  }
 }));
 
 export default useStyle;
