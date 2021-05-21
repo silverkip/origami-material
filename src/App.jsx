@@ -57,44 +57,42 @@ function App() {
         ))}
         
         <Fade bottom cascade duration={800} delay={100}>
-          <div className={classes.container}>
-            <Grid container sm className={classes.heroContainer}>
-              <Grid item sm={12} md={12} lg={12} className={classes.heroText}>
-                <Typography variant="h2" align="center" color="textPrimary">
-                  Pepega
-                </Typography>
-                <Typography variant="h6" align="center" color="textPrimary" paragraph>
-                  The art of pepega
-                </Typography>
+          <div className={classes.sliderContainer}>
+
+            <section className={classes.sliderContent}>
+              <Grid container>
+                <Grid item sm={12} md={12} lg={12}>
+                  <Typography variant="h2" align="center" color="textPrimary">
+                    Pepega
+                  </Typography>
+                </Grid>
               </Grid>
-              <Grid item sm={4} md={4} lg={4} className={classes.heroText}>
-                <Typography variant="h2" align="center" color="textPrimary">
-                  Pepega
-                </Typography>
-                <Typography variant="h6" align="center" color="textPrimary" paragraph>
-                  The art of pepega
-                </Typography>
+            </section>
+
+            <section className={classes.sliderContent}>
+              <Grid container>
+                <Grid item sm={12} md={12} lg={12}>
+                  <Typography variant="h2" align="center" color="textPrimary">
+                    Pepega
+                  </Typography>
+                </Grid>
               </Grid>
-              <Grid item sm={4} md={4} lg={4} className={classes.heroText}>
-                <Typography variant="h2" align="center" color="textPrimary">
-                  Pepega
-                </Typography>
-                <Typography variant="h6" align="center" color="textPrimary" paragraph>
-                  The art of pepega
-                </Typography>
-              </Grid>
-              <Grid item sm={4} md={4} lg={4} className={classes.heroText}>
-                <Typography variant="h2" align="center" color="textPrimary">
-                  Pepega
-                </Typography>
-                <Typography variant="h6" align="center" color="textPrimary" paragraph>
-                  The art of pepega
-                </Typography>
-              </Grid>
-            </Grid>
+            </section>
+            
           </div>
         </Fade>
-        
+
+        <Fade bottom cascade duration={700} delay={200}>
+            <div className={classes.container}>
+              <Grid container className={classes.heroContainer}>
+                <Grid item sm={12} md={12} lg={12}>
+                  <Typography variant="h5" align="center" color="textPrimary" paragraph className={classes.responsiveText}>
+                    Want to learn more and get better at origami?
+                  </Typography>
+                </Grid>
+              </Grid>
+            </div>
+          </Fade>
       </div>
       </ThemeProvider>
     </>

@@ -58,6 +58,21 @@ const useStyle = makeStyles((theme) => ({
   heroContent: {
     
   },
+  sliderContainer: {
+    scrollSnapType:"x mandatory",
+    height: '100vh',
+    width: '100vw',
+    scrollSnapAlign: 'start',
+    overflowX:'auto',
+    display:'flex',
+  },
+  
+  sliderContent: {
+    height: '100%',
+    flex:'0 0 100%',
+    scrollSnapAlign: 'start',
+  },
+
   heroText: {
     padding: theme.spacing(0,5,0),
     textAlign:'left',

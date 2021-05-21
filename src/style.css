@@ -1,4 +1,12 @@
 html {
   scroll-snap-type: y mandatory;
-  overflow:'auto',
+  overflow-x: hidden;
+}
+div{
+  -ms-overflow-style: none;
+  scrollbar-color: transparent transparent;
+}
+div::-webkit-scrollbar {
+  display: none;
+  scrollbar-color: transparent transparent;
 }
