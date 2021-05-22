@@ -4,8 +4,7 @@ import customTheme from './theme';
 const useStyle = makeStyles((theme) => ({
   button: {
     borderRadius:10,
-    padding: customTheme.spacing(1,5),
-    
+    padding: customTheme.spacing(1,4),
   },
 
   fullScreenSlides:{
