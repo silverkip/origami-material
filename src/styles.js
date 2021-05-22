@@ -52,17 +52,61 @@ const useStyle = makeStyles((theme) => ({
   },
   container: {
     // backgroundColor: '#aaaaaa',
-    padding: theme.spacing(10,6,10),
     height: "100vh",
     alignItems: "center",
     verticalAlign: 'center',
     width: 'auto',
     scrollSnapAlign: 'start',
   },
-  heroContainer: {
-    display: 'flex',
+
+  container2: {
+    // backgroundColor: '#aaaaaa',
+    height: "100vh",
     alignItems: "center",
-    height: "80vh",
+    verticalAlign: 'center',
+    width: 'auto',
+    scrollSnapAlign: 'start',
+    backgroundColor:'#C1E5FF',
+  },
+
+  container3: {
+    // backgroundColor: '#aaaaaa',
+    height: "100vh",
+    alignItems: "center",
+    verticalAlign: 'center',
+    width: 'auto',
+    scrollSnapAlign: 'start',
+    backgroundColor:'#EFEBC5',
+  },
+
+  container4: {
+    // backgroundColor: '#aaaaaa',
+    height: "100vh",
+    alignItems: "center",
+    verticalAlign: 'center',
+    width: 'auto',
+    scrollSnapAlign: 'start',
+    backgroundColor:'#F2C1D4',
+  },
+
+  container5: {
+    // backgroundColor: '#aaaaaa',
+    height: "100vh",
+    alignItems: "center",
+    verticalAlign: 'center',
+    width: 'auto',
+    scrollSnapAlign: 'start',
+    backgroundColor:'#EFEBC5',
+  },
+
+  heroContainer: {
+    padding: theme.spacing(10,6,10),
+    height: "100vh",
+    alignItems: "center",
+    verticalAlign: 'center',
+    width: 'auto',
+    scrollSnapAlign: 'start',
+    display: 'flex',
     // [theme.breakpoints.only('sm')]: {
     //   height: "80vh",
     // },
@@ -172,11 +216,11 @@ const useStyle = makeStyles((theme) => ({
   },
 
   guideText: {
-    padding: theme.spacing(0,12,0),
+    padding: theme.spacing(3,12,3),
     textAlign:'center',
     [theme.breakpoints.down('sm')]: {
       textAlign:'center',
-      padding: theme.spacing(0,2,0),
+      padding: theme.spacing(3,2,3),
     },
   },
 
@@ -194,28 +238,28 @@ const useStyle = makeStyles((theme) => ({
       padding: theme.spacing(5,4,5),
     },
     [theme.breakpoints.up('md')]: {
-      padding: theme.spacing(5,6,5),
+      padding: theme.spacing(5,12,5),
     },
     [theme.breakpoints.up('lg')]: {
-      padding: theme.spacing(5,9,5),
+      padding: theme.spacing(5,24,5),
     },
     [theme.breakpoints.up('xl')]: {
-      padding: theme.spacing(5,12,5),
+      padding: theme.spacing(5,48,5),
     },
   },
   callToAction: {
-    padding: theme.spacing(6,1,3),
+    padding: theme.spacing(6,1,4),
     '@media (min-width:600px)': {
-      padding: theme.spacing(5,4,3),
+      padding: theme.spacing(6,4,5),
     },
     [theme.breakpoints.up('md')]: {
-      padding: theme.spacing(5,6,3),
+      padding: theme.spacing(6,6,5),
     },
     [theme.breakpoints.up('lg')]: {
-      padding: theme.spacing(5,9,3),
+      padding: theme.spacing(6,9,5),
     },
     [theme.breakpoints.up('xl')]: {
-      padding: theme.spacing(5,12,3),
+      padding: theme.spacing(6,12,5),
     },
   },
   centerAlign: {

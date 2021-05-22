@@ -2,15 +2,15 @@ import useStyle from './styles';
 import {Typography, Grid, Box, Button, CssBaseline } from '@material-ui/core';
 import {ThemeProvider} from '@material-ui/styles';
 import customTheme from './theme';
-import Fade from 'react-reveal/Fade';
+// import Fade from 'react-reveal/Fade';
 import {React} from 'react';
 import Carousel from './Components/Carousel';
 import guideTexts from './GuideTexts';
 
-const wideTexts = [
-  "But instead of reading about the long history of Origami, let's learn it by doing!",
-  "All you need is a piece of square paper and you are set!",
-]
+// const wideTexts = [
+//   "But instead of reading about the long history of Origami, let's learn it by doing!",
+//   "All you need is a piece of square paper and you are set!",
+// ]
 
 function App() {
   const classes = useStyle();
@@ -35,8 +35,8 @@ function App() {
             </Grid>
           </div>
 
-          <Fade bottom cascade duration={700} delay={200}>
-              <div className={classes.container}>
+
+              <div className={classes.container2}>
                 <Grid container className={classes.heroContainer}>
                   <Grid item sm={12} md={12} lg={12}>
                     <Typography variant="h5" align="center" color="textPrimary" paragraph className={classes.responsiveText}>
@@ -45,8 +45,32 @@ function App() {
                   </Grid>
                 </Grid>
               </div>
-            </Fade>
-          {wideTexts.map((para) => (
+
+
+
+            <div className={classes.container3}>
+              <Grid container className={classes.heroContainer}>
+                <Grid item sm={12} md={12} lg={12}>
+                  <Typography variant="h5" align="center" color="textPrimary" paragraph className={classes.responsiveText}>
+                    But instead of reading about the long history of Origami, let's learn it by doing!
+                  </Typography>
+                </Grid>
+              </Grid>
+            </div>
+
+
+
+              <div className={classes.container4}>
+                <Grid container className={classes.heroContainer}>
+                  <Grid item sm={12} md={12} lg={12}>
+                    <Typography variant="h5" align="center" color="textPrimary" paragraph className={classes.responsiveText}>
+                      All you need is a piece of square paper and you are set!
+                    </Typography>
+                  </Grid>
+                </Grid>
+              </div>
+
+          {/* {wideTexts.map((para) => (
             <Fade bottom cascade duration={700} delay={200}>
               <div className={classes.container}>
                 <Grid container className={classes.heroContainer}>
@@ -59,13 +83,13 @@ function App() {
               </div>
             </Fade>
           ))}
-          
+           */}
 
             <Carousel guideData={guideTexts}/>
 
 
-          <Fade bottom cascade duration={700} delay={200}>
-              <div className={classes.container}>
+
+              <div className={classes.container5}>
                 <Grid container className={classes.heroContainer}>
                   <Grid item sm={12} md={12} lg={12} className={classes.centerAlign}>
                     <Typography variant="h5" align="center" color="textPrimary" className={classes.callToAction}>
@@ -77,7 +101,7 @@ function App() {
                   </Grid>
                 </Grid>
               </div>
-            </Fade>
+
         </div>
       </div>
       </ThemeProvider>

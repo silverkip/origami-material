@@ -1,6 +1,6 @@
 import {React, useRef} from 'react';
 import useStyle from '../styles';
-import {Typography, Grid, IconButton } from '@material-ui/core';
+import {Typography, Grid, IconButton, Divider } from '@material-ui/core';
 import NavigateBeforeIcon from '@material-ui/icons/NavigateBefore';
 import NavigateNextIcon from '@material-ui/icons/NavigateNext';
 
@@ -44,6 +44,7 @@ const Carousel = ({guideData}) => {
               <Typography variant="h3" align="center" color="textPrimary" className={classes.guideText}>
                 {item.title}
               </Typography>
+              <Divider variant="middle" />
               <Typography variant="h4" align="center" color="textPrimary" className={classes.guideText} paragraph>
                 {item.instruction}
               </Typography>
