@@ -40,7 +40,7 @@ function App() {
                 <Grid container className={classes.heroContainer}>
                   <Grid item sm={12} md={12} lg={12}>
                     <Typography variant="h5" align="center" color="textPrimary" paragraph className={classes.responsiveText}>
-                      The word <Box fontWeight={800} display='inline'>Origami</Box> comes from the Japanese words <Box fontWeight={800} display='inline'>ori</Box>(folding) and <Box fontWeight={800} display='inline'>kami</Box>(paper). Although the name originates from Japan, it is used to refer to any form of paper folding art regardless of culture.
+                      The word <Box fontWeight={700} display='inline'>Origami</Box> comes from the Japanese words <Box fontWeight={700} display='inline'>ori</Box>(folding) and <Box fontWeight={700} display='inline'>kami</Box>(paper). Although the name originates from Japan, it is used to refer to any form of paper folding art regardless of culture.
                     </Typography>
                   </Grid>
                 </Grid>
