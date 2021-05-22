@@ -66,7 +66,7 @@ const useStyle = makeStyles((theme) => ({
     verticalAlign: 'center',
     width: 'auto',
     scrollSnapAlign: 'start',
-    backgroundColor:'#C1E5FF',
+    backgroundColor:'#A6CCC1',
   },
 
   container3: {
@@ -76,7 +76,7 @@ const useStyle = makeStyles((theme) => ({
     verticalAlign: 'center',
     width: 'auto',
     scrollSnapAlign: 'start',
-    backgroundColor:'#EFEBC5',
+    backgroundColor:'#E1EFCE',
   },
 
   container4: {
@@ -86,7 +86,7 @@ const useStyle = makeStyles((theme) => ({
     verticalAlign: 'center',
     width: 'auto',
     scrollSnapAlign: 'start',
-    backgroundColor:'#F2C1D4',
+    backgroundColor:'#F2C5DC',
   },
 
   container5: {
