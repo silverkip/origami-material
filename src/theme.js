@@ -58,11 +58,11 @@ customTheme.typography.h4 = {
   fontWeight: '300',
   '@media (min-width:600px)': {
     fontSize: '2.125rem',
-    fontWeight: '500',
+    fontWeight: '300',
   },
   [customTheme.breakpoints.up('md')]: {
     fontSize: '2.125rem',
-    fontWeight: '500',
+    fontWeight: '300',
   },
 };
 
