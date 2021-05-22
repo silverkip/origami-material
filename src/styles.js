@@ -204,18 +204,18 @@ const useStyle = makeStyles((theme) => ({
     },
   },
   callToAction: {
-    padding: theme.spacing(6,1,2),
+    padding: theme.spacing(6,1,3),
     '@media (min-width:600px)': {
-      padding: theme.spacing(5,4,2),
+      padding: theme.spacing(5,4,3),
     },
     [theme.breakpoints.up('md')]: {
-      padding: theme.spacing(5,6,2),
+      padding: theme.spacing(5,6,3),
     },
     [theme.breakpoints.up('lg')]: {
-      padding: theme.spacing(5,9,2),
+      padding: theme.spacing(5,9,3),
     },
     [theme.breakpoints.up('xl')]: {
-      padding: theme.spacing(5,12,2),
+      padding: theme.spacing(5,12,3),
     },
   },
   centerAlign: {
