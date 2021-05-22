@@ -1,12 +1,8 @@
-html {
-  scroll-snap-type: y mandatory;
-  overflow-x: hidden;
-}
-div{
+section{
   -ms-overflow-style: none;
   scrollbar-color: transparent transparent;
 }
-div::-webkit-scrollbar {
+section::-webkit-scrollbar {
   display: none;
   scrollbar-color: transparent transparent;
-}
+} 

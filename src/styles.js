@@ -6,9 +6,28 @@ const useStyle = makeStyles((theme) => ({
     margin: customTheme.spacing.unit,
     padding: 24,
   },
-  
+
+  fullScreenSlides:{
+    scrollSnapType:'y mandatory',
+    overflowX:'hidden',
+    height: '100vh',
+    width: '100vw',
+    overflowY:'auto',
+    display:'flex',
+    backgroundColor: customTheme.palette.primary.main,
+  },
+
   responsiveIcon: {
     fontSize:'5rem !important',
+    [theme.breakpoints.down('xs')]: {
+      fontSize:'2.5rem !important',
+    },
+    [theme.breakpoints.down('sm')]: {
+      fontSize:'4rem !important',
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize:'5rem !important',
+    },
   },
 
   leftIcon: {
@@ -84,26 +103,39 @@ const useStyle = makeStyles((theme) => ({
 
   guideContainer: {
     display: 'flex',
-    alignItems: "center",
+    alignItems: "top",
     height: "100%",
+    [theme.breakpoints.up('md')]: {
+      alignItems: "center",
+    },
   },
 
   guideImage: {
+    padding: theme.spacing(6,2,0),
     width:'100%',
     height:'100%',
     objectFit:'cover',
+    alignSelf:'center',
+    [theme.breakpoints.up('lg')]: {
+      padding: theme.spacing(3,12,3),
+    },
   },
 
   guideImageContainer: {
     display: 'flex',
     alignItems: "center",
+    justifyContent:'center',
     height: "100%",
-    [theme.breakpoints.only('sm')]: {
+    [theme.breakpoints.only('xs')]: {
       height: "50%",
       width: "100%",
     },
-    [theme.breakpoints.only('xs')]: {
-      height: "50%",
+    [theme.breakpoints.only('sm')]: {
+      height: "70%",
+      width: "100%",
+    },
+    [theme.breakpoints.only('md')]: {
+      height: "80%",
       width: "100%",
     },
     [theme.breakpoints.only('lg')]: {
@@ -131,9 +163,19 @@ const useStyle = makeStyles((theme) => ({
   },
   
   sliderContent: {
-    height: '100%',
+    height: '100vh',
+    width: '100vw',
     flex:'0 0 100%',
     scrollSnapAlign: 'start',
+  },
+
+  guideText: {
+    padding: theme.spacing(0,12,0),
+    textAlign:'center',
+    [theme.breakpoints.down('sm')]: {
+      textAlign:'center',
+      padding: theme.spacing(0,2,0),
+    },
   },
 
   heroText: {
@@ -158,7 +200,26 @@ const useStyle = makeStyles((theme) => ({
     [theme.breakpoints.up('xl')]: {
       padding: theme.spacing(5,12,5),
     },
-  }
+  },
+  callToAction: {
+    padding: theme.spacing(6,1,2),
+    '@media (min-width:600px)': {
+      padding: theme.spacing(5,4,2),
+    },
+    [theme.breakpoints.up('md')]: {
+      padding: theme.spacing(5,6,2),
+    },
+    [theme.breakpoints.up('lg')]: {
+      padding: theme.spacing(5,9,2),
+    },
+    [theme.breakpoints.up('xl')]: {
+      padding: theme.spacing(5,12,2),
+    },
+  },
+  centerAlign: {
+    textAlign: 'center',
+  },
+
 }));
 
 export default useStyle;
