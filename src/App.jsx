@@ -1,8 +1,11 @@
 import useStyle from './styles';
-import {Typography, Container, Grid, Box, Paper, CssBaseline } from '@material-ui/core';
+import {Typography, Container, Grid, Box, Button, CssBaseline } from '@material-ui/core';
 import {ThemeProvider} from '@material-ui/styles';
 import customTheme from './theme';
 import Fade from 'react-reveal/Fade';
+import {React, useRef} from 'react';
+import Carousel from './Components/Carousel';
+import guideTexts from './GuideTexts';
 
 const wideTexts = [
   "But instead of reading about the long history of Origami, let's learn it by doing!",
@@ -57,29 +60,9 @@ function App() {
         ))}
         
         <Fade bottom cascade duration={800} delay={100}>
-          <div className={classes.sliderContainer}>
 
-            <section className={classes.sliderContent}>
-              <Grid container>
-                <Grid item sm={12} md={12} lg={12}>
-                  <Typography variant="h2" align="center" color="textPrimary">
-                    Pepega
-                  </Typography>
-                </Grid>
-              </Grid>
-            </section>
+          <Carousel guideData={guideTexts}/>
 
-            <section className={classes.sliderContent}>
-              <Grid container>
-                <Grid item sm={12} md={12} lg={12}>
-                  <Typography variant="h2" align="center" color="textPrimary">
-                    Pepega
-                  </Typography>
-                </Grid>
-              </Grid>
-            </section>
-            
-          </div>
         </Fade>
 
         <Fade bottom cascade duration={700} delay={200}>

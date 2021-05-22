@@ -2,6 +2,31 @@ import { makeStyles, } from '@material-ui/core/styles';
 import customTheme from './theme';
 
 const useStyle = makeStyles((theme) => ({
+  responsiveButton: {
+    margin: customTheme.spacing.unit,
+    padding: 24,
+  },
+  
+  responsiveIcon: {
+    fontSize:'5rem !important',
+  },
+
+  leftIcon: {
+    position:'fixed !important',
+    top:'50%',
+    left:'0px',
+    zIndex: '99',
+    transform:'translateX(10%) !important',
+  },
+
+  rightIcon: {
+    position:'fixed !important',
+    top:'50%',
+    right:'0px',
+    zIndex: '99',
+    transform:'translateX(-10%) !important',
+  },
+
   mainStyle: {
     backgroundColor: customTheme.palette.primary.main,
   },
@@ -31,6 +56,7 @@ const useStyle = makeStyles((theme) => ({
     //   height: "80vh",
     // },
   },
+
   heroImage: {
     backgroundImage: 'url(/img/origami-hero.png)',
     backgroundSize: 'cover',
@@ -55,16 +81,53 @@ const useStyle = makeStyles((theme) => ({
       width: "100%",
     },
   },
-  heroContent: {
-    
+
+  guideContainer: {
+    display: 'flex',
+    alignItems: "center",
+    height: "100%",
+  },
+
+  guideImage: {
+    width:'100%',
+    height:'100%',
+    objectFit:'cover',
+  },
+
+  guideImageContainer: {
+    display: 'flex',
+    alignItems: "center",
+    height: "100%",
+    [theme.breakpoints.only('sm')]: {
+      height: "50%",
+      width: "100%",
+    },
+    [theme.breakpoints.only('xs')]: {
+      height: "50%",
+      width: "100%",
+    },
+    [theme.breakpoints.only('lg')]: {
+      height: "100%",
+      width: "100%",
+    },
+    [theme.breakpoints.only('xl')]: {
+      height: "100%",
+      width: "100%",
+    },
   },
   sliderContainer: {
+    transform:'translateZ(0) !important',
     scrollSnapType:"x mandatory",
     height: '100vh',
     width: '100vw',
     scrollSnapAlign: 'start',
     overflowX:'auto',
+    overflowY:'hidden',
     display:'flex',
+  },
+
+  carouselContainer: {
+    transform:'translateZ(0) !important',
   },
   
   sliderContent: {
@@ -88,6 +151,12 @@ const useStyle = makeStyles((theme) => ({
     },
     [theme.breakpoints.up('md')]: {
       padding: theme.spacing(5,6,5),
+    },
+    [theme.breakpoints.up('lg')]: {
+      padding: theme.spacing(5,9,5),
+    },
+    [theme.breakpoints.up('xl')]: {
+      padding: theme.spacing(5,12,5),
     },
   }
 }));
