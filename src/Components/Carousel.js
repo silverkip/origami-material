@@ -32,7 +32,7 @@ const Carousel = ({guideData}) => {
       <IconButton color="action" className={classes.leftIcon} ariaLabel="scroll left" onClick={() => scrollLeft()}>
         <NavigateBeforeIcon className={classes.responsiveIcon} />
       </IconButton>
-      <div className={classes.sliderContainer} ref={scroller}>
+      <section className={classes.sliderContainer} ref={scroller}>
 
       {guideData.map((item) => (
         <section className={classes.sliderContent}>
@@ -40,7 +40,7 @@ const Carousel = ({guideData}) => {
             <Grid item xs={12} sm={12} md={6} lg={6} className={classes.guideImageContainer}>
               <img src={item.img} alt={item.title} className={classes.guideImage} />
             </Grid>
-            <Grid item xs={12} sm={12} md={6} lg={6}>
+            <Grid item xs={12} sm={12} md={5} lg={5}>
               <Typography variant="h3" align="center" color="textPrimary" className={classes.guideText}>
                 {item.title}
               </Typography>
@@ -48,11 +48,12 @@ const Carousel = ({guideData}) => {
                 {item.instruction}
               </Typography>
             </Grid>
+            <Grid item xs={0} sm={0} md={1} lg={1}/>
           </Grid>
         </section>
       ))}
 
-      </div>
+      </section>
       <IconButton color="action" className={classes.rightIcon} ariaLabel="scroll right" onClick={() => scrollRight()}>
         <NavigateNextIcon className={classes.responsiveIcon} />
       </IconButton>

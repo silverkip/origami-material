@@ -1,9 +1,9 @@
 import useStyle from './styles';
-import {Typography, Container, Grid, Box, Button, CssBaseline } from '@material-ui/core';
+import {Typography, Grid, Box, Button, CssBaseline } from '@material-ui/core';
 import {ThemeProvider} from '@material-ui/styles';
 import customTheme from './theme';
 import Fade from 'react-reveal/Fade';
-import {React, useRef} from 'react';
+import {React} from 'react';
 import Carousel from './Components/Carousel';
 import guideTexts from './GuideTexts';
 
@@ -71,7 +71,7 @@ function App() {
                     <Typography variant="h5" align="center" color="textPrimary" className={classes.callToAction}>
                       Want to learn more and get better at origami?
                     </Typography>
-                    <Button align="center" variant="contained" color="primary" size="large" href="https://origami.me/">
+                    <Button align="center" variant="contained" color="primary" size="large" href="https://origami.me/" className={classes.button}>
                       Learn More
                     </Button>
                   </Grid>

@@ -20,13 +20,13 @@ const customTheme = createMuiTheme({
   palette: {
     primary: {
       // light: will be calculated from palette.primary.main,
-      main: '#E4EBF2',
+      main: '#0C2240',
       // dark: will be calculated from palette.primary.main,
       // contrastText: will be calculated to contrast with palette.primary.main
     },
     secondary: {
       //light: '#0066ff',
-      main: '#A6A6A6',
+      main: '#E4EBF2',
       // dark: will be calculated from palette.secondary.main,
       //contrastText: '#ffcc00',
     },

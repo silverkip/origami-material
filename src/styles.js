@@ -2,19 +2,21 @@ import { makeStyles, } from '@material-ui/core/styles';
 import customTheme from './theme';
 
 const useStyle = makeStyles((theme) => ({
-  responsiveButton: {
-    margin: customTheme.spacing.unit,
-    padding: 24,
+  button: {
+    borderRadius:10,
+    padding: customTheme.spacing(1,5),
+    
   },
 
   fullScreenSlides:{
+    scrollSnapStop:'always',
     scrollSnapType:'y mandatory',
     overflowX:'hidden',
     height: '100vh',
     width: '100vw',
     overflowY:'auto',
     display:'flex',
-    backgroundColor: customTheme.palette.primary.main,
+    backgroundColor: customTheme.palette.secondary.main,
   },
 
   responsiveIcon: {
@@ -47,7 +49,7 @@ const useStyle = makeStyles((theme) => ({
   },
 
   mainStyle: {
-    backgroundColor: customTheme.palette.primary.main,
+    backgroundColor: customTheme.palette.secondary.main,
   },
   container: {
     // backgroundColor: '#aaaaaa',
@@ -150,6 +152,7 @@ const useStyle = makeStyles((theme) => ({
   sliderContainer: {
     transform:'translateZ(0) !important',
     scrollSnapType:"x mandatory",
+    scrollSnapStop:'always',
     height: '100vh',
     width: '100vw',
     scrollSnapAlign: 'start',
